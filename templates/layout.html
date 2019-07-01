@@ -3,9 +3,9 @@
     <head>
       <meta charset="utf-8">
       <meta content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>CRLS TAKES</title>
+        <title>Webbyll</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="/static/styles.css"/>
+        <link rel="stylesheet" type="text/css" href="../static/styles.css"/>
         <link rel="shortcut icon" href="/static/logo.ico" type="image/x-icon" />
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
@@ -19,7 +19,6 @@
               <img src="/static/WebLogo.png" alt="CRLS-Takes Logo #1" style="width:30%; margin-bottom:-40px">
             </a>
               <ul class="navbar-nav mr-auto">
-                {% if session.user_id %}
                 <div class="container">
                   <div class="dropdown">
                     <button class="dropbtn" href="/takesG">Takes</button>
@@ -46,10 +45,8 @@
                 <div class="container"><li class="nav-item"><a class="nav-link" href="/write" style="margin-top:10px">Write</a></li></div>
                 <div class="container"><li class="nav-item"><a class="nav-link" href="/profile" style="margin-top:10px">Profile</a></li></div>
                 <div class="container"><li class="nav-item"><a class="nav-link" href="/logout" style="margin-top:10px">Logout</a></li></div>
-                {% else %}
                 <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
                 <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
-                {% endif %}
               </ul>
             </div>
         </nav>

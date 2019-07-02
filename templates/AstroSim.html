@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block heading %} Index {% endblock %}
+
+{% block main %}
+<div class="container">
+  <h1>
+    SPACE<span class="purple">BOISSS</span>
+  </h1>
+  <form action="/AstroSim" method="post">
+        <div class="form-group">
+            <input class="form-control" name="confirmation" placeholder="Repeat Password"  id="confirmation" type="password">
+        </div>
+        <br>
+        <button class="btn btn-primary" type="submit">Submit Parameters</button>
+    </form>
+</div>
+
+
+{% endblock %}

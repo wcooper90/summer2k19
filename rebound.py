@@ -16,7 +16,7 @@ from IPython.display import clear_output
 from tqdm import tqdm
 
 
-
+G = 39.476926421373
 
 class Particle:
     """
@@ -257,7 +257,7 @@ class StarSystem:
         path: String
             Name of the path created relative to ./
         """
-        dir_name = ""
+        dir_name = "static/"
         for star in self.stars:
             dir_name += "Star({}M_{}AU)_".format(star.m,star.a)
 

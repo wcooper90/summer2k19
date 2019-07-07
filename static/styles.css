@@ -3,14 +3,14 @@ h1, p.readableText {
   font-size: 40px; }
 
 button.dropbtn {
-  background-color: #751AE8;
+  background-color: #41CE62;
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none; }
 
-span.purple {
-  color: #751AE8; }
+span.blue {
+  color: #3333FF; }
 
 img {
   padding-bottom: 50px; }
@@ -37,7 +37,7 @@ span.silver {
 
 
 body {
-  background-color: #D6DBDF;
+  background-color: #CCFFE5;
 }
 
 div.dropdown {
@@ -59,7 +59,7 @@ div.dropdown-content a {
   display: block; }
 
 div.dropdown:hover .dropbtn {
-  background-color: #8A2BE2; }
+  background-color: #80E898; }
 
 div.dropdown:hover .dropdown-content {
   display: block; }

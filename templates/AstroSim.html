@@ -5,15 +5,28 @@
 {% block main %}
 <div class="container">
   <h1>
-    SPACE<span class="purple">BOISSS</span>
+    SPACE <span class="blue">BOISSS</span>
   </h1>
+  <h4>This web apps allows you to input a number of parameters for particles in a system and returns
+      a plot along with raw data.</h4>
   <form action="/AstroSim" method="post">
         <div class="form-group">
-            <input class="form-control" name="confirmation" placeholder="Repeat Password"  id="confirmation" type="password">
+            <input class="form-control" name="ns" placeholder="Number of Stars"  id="confirmation" type="text">
+            <input class="form-control" name="na" placeholder="Number of Asteroids"  id="confirmation" type="text">
+            <input class="form-control" name="sa" placeholder="Size of Asteroids"  id="confirmation" type="text">
+            <input class="form-control" name="ss" placeholder="Size of Stars"  id="confirmation" type="text">
+            <input class="form-control" name="time" placeholder="Time to be Simulated"  id="confirmation" type="text">
         </div>
         <br>
         <button class="btn btn-primary" type="submit">Submit Parameters</button>
-    </form>
+    </form>f
+    <br />
+    <div class="progress">
+     <div class="progress-bar progress-bar-striped active" role="progressbar"
+     aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+       0%
+     </div>
+    </div>
 </div>
 
 

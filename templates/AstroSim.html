@@ -3,12 +3,15 @@
 {% block heading %} Index {% endblock %}
 
 {% block main %}
+<br />
 <div class="container">
-  <h1>
-    SPACE <span class="blue">BOISSS</span>
-  </h1>
-  <h4>This web apps allows you to input a number of parameters for particles in a system and returns
-      a plot along with raw data.</h4>
+  <div class="jumbotron">
+    <h1>
+      SPACE <span class="blue">BOISSS</span>
+    </h1>
+    <h4 class="readableText">This web apps allows you to input a number of parameters for particles in a system and returns
+        a plot along with raw data.</h4>
+  </div>
   <form action="/AstroSim" method="post">
         <div class="form-group">
             <input class="form-control" name="ns" placeholder="Number of Stars"  id="confirmation" type="text">

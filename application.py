@@ -28,14 +28,14 @@ def AstroSim():
         G = 39.476926421373
         ss = float(request.form.get("ss"))
         ns = float(request.form.get("ns"))
-        na = float(request.form.get("na"))
-        sa = float(request.form.get("sa"))
+        na = int(request.form.get("na"))
+        sa = float(request.form.get("sa")) * 0.000001
         time = float(request.form.get("time"))
-        stars = [Particle(m=1,x=9),Particle(m=1,x=-9)] #Particle(m=0.1221,x=8700)
+        stars = [Particle(m=1,x=9),Particle(m=1,x=-9)]
         stars[0].vy = np.sqrt(G*stars[1].m/(2*(stars[0].a+stars[1].a)))
         stars[1].vy = -np.sqrt(G*stars[0].m/(2*(stars[0].a+stars[1].a)))
-        ast = Particle(m=0,x=10)
-        sys = StarSystem(stars,ast,n_ast=2,seed=1)
+        ast = Particle(m=sa,x=10)
+        sys = StarSystem(stars,ast,n_ast=na,seed=1)
         t_start = 0
         t_stop = time
         iterations = 100
